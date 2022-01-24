@@ -4,7 +4,12 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+  } from "react-router-dom";
 export default class AboutUs extends React.Component {
 	constructor(props) {
 		super(props);
@@ -93,8 +98,7 @@ export default class AboutUs extends React.Component {
                                     {this.state.aboutDesc}
                                 </p>
 
-                                <a href="#" className='viewBtn'>Browse our historical projects <i className='icon-arrow-down-right2'></i></a>
-
+                                <Link className='viewBtn' to="/aboutus">Browse our historical projects <i className='icon-arrow-down-right2'></i></Link>
                             </div>
                             
 

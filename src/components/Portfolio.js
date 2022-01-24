@@ -101,7 +101,7 @@ export default class Portfolio extends React.Component {
 
                 <div className='viewAll'>
                     <div className='container'>
-                        <a href='#'>Browse all our projects…</a>
+                        <Link to="/projects">Browse all our projects…</Link>
                     </div>
                 </div>
             </div>
